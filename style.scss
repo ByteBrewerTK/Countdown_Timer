@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&display=swap');
+@import "_var.scss";
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: $col-bg;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    line-height: 2;
+    background: url(./Assets/undraw_product_tour_re_8bai.svg) no-repeat bottom;
+    
+    h2{
+        font-size: 3rem;
+        
+    }
+    p{
+        font-size: 2.2rem;
+        
+    }
+
+    .count{
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items:last baseline;
+        justify-content: center;
+        gap: 1rem;
+
+        div{
+            display: inline-block;
+            width: 15%;
+            aspect-ratio: 1/1;
+            text-align: center;
+            height: fit-content;
+            
+            input{
+                width:100%; 
+                display: block;
+                height: 100%;
+                text-align: center;
+                font-size: 2.2rem;
+                background: $col-main;
+                border-top-right-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                font-family: 'Bruno Ace SC', cursive;
+                
+            }
+
+            
+        }  
+        span{
+            transform: translateY(-3rem);
+            font-size: 3rem;           
+        }
+    }
+}
