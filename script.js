@@ -1,6 +1,6 @@
 // Countdown Project
 
-const endDate = "06 May 2023 08:00 AM";
+const endDate = "06 May 2024 08:00 AM";
 document.getElementById("end-date").innerText = endDate;
 
 const input = document.querySelectorAll("input");
@@ -10,6 +10,8 @@ const clock = () => {
     const now = new Date();
 
     const diff = (end-now)/1000;
+
+    if(diff <0) return;
 
     // For Days
     input[0].value = Math.floor(diff/3600/24);
